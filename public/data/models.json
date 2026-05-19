@@ -1,0 +1,180 @@
+[
+  {
+    "id": "1",
+    "name": "GPT-4o",
+    "provider": "OpenAI",
+    "type": "cloud",
+    "category": "llm",
+    "vram_required": 0,
+    "score": 96,
+    "capabilities": ["text", "code", "image"],
+    "description": "全能多模态专家，支持文本、代码、图像理解与生成",
+    "parameters": {
+      "salary": "$15.00/1M tokens",
+      "speed": "80 tokens/s",
+      "specialty": "全能多模态专家",
+      "roi": "中",
+      "context": "128K"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Claude 3.5 Sonnet",
+    "provider": "Anthropic",
+    "type": "cloud",
+    "category": "llm",
+    "vram_required": 0,
+    "score": 97,
+    "capabilities": ["text", "code"],
+    "description": "深度写作与逻辑大师，编程能力顶尖",
+    "parameters": {
+      "salary": "$3.00/1M tokens",
+      "speed": "100 tokens/s",
+      "specialty": "深度写作与逻辑大师",
+      "roi": "高",
+      "context": "200K"
+    }
+  },
+  {
+    "id": "3",
+    "name": "Gemini 1.5 Pro",
+    "provider": "Google",
+    "type": "cloud",
+    "category": "llm",
+    "vram_required": 0,
+    "score": 96,
+    "capabilities": ["text", "code", "video", "audio"],
+    "description": "原生多模态之王，支持超长上下文与视频理解",
+    "parameters": {
+      "salary": "$7.00/1M tokens",
+      "speed": "90 tokens/s",
+      "specialty": "超长上下文多模态",
+      "roi": "高",
+      "context": "2M"
+    }
+  },
+  {
+    "id": "4",
+    "name": "Kling AI",
+    "provider": "Kuaishou",
+    "type": "cloud",
+    "category": "video",
+    "vram_required": 0,
+    "score": 96,
+    "capabilities": ["video", "animation"],
+    "description": "动态视觉生成专家",
+    "parameters": {
+      "salary": "按需计费",
+      "speed": "中等",
+      "specialty": "动态视觉生成专家",
+      "roi": "高"
+    }
+  },
+  {
+    "id": "5",
+    "name": "Llama 3 70B (4-bit)",
+    "provider": "Meta",
+    "type": "local",
+    "category": "llm",
+    "vram_required": 16,
+    "score": 91,
+    "capabilities": ["text", "code"],
+    "description": "开源标杆，性能直逼 GPT-4",
+    "parameters": {
+      "salary": "$0.00 (Local)",
+      "speed": "30 tokens/s",
+      "specialty": "开源全能选手",
+      "roi": "极高",
+      "context": "8K"
+    }
+  },
+  {
+    "id": "6",
+    "name": "DeepSeek-V3",
+    "provider": "DeepSeek",
+    "type": "local",
+    "category": "llm",
+    "vram_required": 48,
+    "score": 97,
+    "capabilities": ["text", "code", "logic"],
+    "description": "极速工程与逻辑推理专家，支持本地部署",
+    "parameters": {
+      "salary": "$0.15/1M tokens",
+      "speed": "150 tokens/s",
+      "specialty": "极速工程与逻辑推理",
+      "roi": "高",
+      "context": "32K"
+    }
+  },
+  {
+    "id": "7",
+    "name": "Llama 3 8B",
+    "provider": "Meta",
+    "type": "local",
+    "category": "llm",
+    "vram_required": 6,
+    "score": 82,
+    "capabilities": ["text"],
+    "description": "入门级本地模型，速度极快",
+    "parameters": {
+      "salary": "$0.00 (Local)",
+      "speed": "15 tokens/s",
+      "specialty": "轻量级快速推理",
+      "roi": "极高",
+      "context": "8K"
+    }
+  },
+  {
+    "id": "8",
+    "name": "Flux.1 [dev]",
+    "provider": "Black Forest Labs",
+    "type": "local",
+    "category": "image",
+    "vram_required": 24,
+    "score": 96,
+    "capabilities": ["image", "design"],
+    "description": "私密性极佳的本地生图助理",
+    "parameters": {
+      "salary": "$0.00 (Local)",
+      "speed": "45 tokens/s",
+      "specialty": "私密性极佳的设计助理",
+      "roi": "极高"
+    }
+  },
+  {
+    "id": "9",
+    "name": "Mistral 7B Instruct",
+    "provider": "Mistral AI",
+    "type": "local",
+    "category": "llm",
+    "vram_required": 8,
+    "score": 84,
+    "capabilities": ["text", "code"],
+    "description": "高效轻量级本地推理模型",
+    "parameters": {
+      "salary": "$0.00 (Local)",
+      "speed": "20 tokens/s",
+      "specialty": "轻量级高效推理",
+      "roi": "极高",
+      "context": "32K"
+    }
+  },
+  {
+    "id": "10",
+    "name": "Qwen2.5 72B",
+    "provider": "Alibaba",
+    "type": "local",
+    "category": "llm",
+    "vram_required": 24,
+    "score": 93,
+    "capabilities": ["text", "code", "logic"],
+    "description": "国产大模型，多语言能力强",
+    "parameters": {
+      "salary": "$0.00 (Local)",
+      "speed": "40 tokens/s",
+      "specialty": "多语言全能选手",
+      "roi": "极高",
+      "context": "128K"
+    }
+  }
+]
