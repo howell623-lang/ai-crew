@@ -163,14 +163,39 @@ export function BattleReport({
           </button>
         </div>
 
-        <button
-          onClick={exportImage}
-          disabled={isExporting}
-          className="flex items-center gap-2 px-4 py-1.5 bg-white text-black text-xs font-bold rounded-lg hover:bg-zinc-200 transition-all disabled:opacity-50 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]"
-        >
-          {isExporting ? <Loader2 className="w-3 h-3 animate-spin" /> : <ImageIcon className="w-3 h-3" />}
-          人才报批出片 {!isPro && <Crown className="w-2 h-2 text-amber-500 ml-1" />}
-        </button>
+        <div className="flex items-center gap-2">
+          {/* 社交媒体分享按钮 */}
+          <button
+            onClick={() => {
+              const text = `AI Crew 推荐 ${newModel.name}，综合评分 ${newModel.score}，比 ${oldModel.name} 提升 ${(improvement + 100).toFixed(0)}%！`;
+              const url = 'https://ai-crew.vercel.app';
+              window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
+            }}
+            className="p-1.5 text-zinc-400 hover:text-white transition-colors"
+            title="分享到 Twitter"
+          >
+            <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </button>
+          <button
+            onClick={() => {
+              const url = 'https://ai-crew.vercel.app';
+              window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank');
+            }}
+            className="p-1.5 text-zinc-400 hover:text-white transition-colors"
+            title="分享到 LinkedIn"
+          >
+            <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17a1.5 1.5 0 001.5 1.5h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.75A1.75 1.75 0 016.5 12a1.75 1.75 0 010-3.25zM19 19h-3v-4.75c0-1.27-.8-2.25-2-2.25-.9 0-1.56.62-1.8 1.38v.75h.3V19h-3v-9h3v1.25c.35-.65 1.18-1.5 2.47-1.5 1.72 0 3.03 1.13 3.03 3.37V19z"/></svg>
+          </button>
+          <div className="w-px h-4 bg-zinc-700 mx-1" />
+          <button
+            onClick={exportImage}
+            disabled={isExporting}
+            className="flex items-center gap-2 px-4 py-1.5 bg-white text-black text-xs font-bold rounded-lg hover:bg-zinc-200 transition-all disabled:opacity-50 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+          >
+            {isExporting ? <Loader2 className="w-3 h-3 animate-spin" /> : <ImageIcon className="w-3 h-3" />}
+            人才报批出片 {!isPro && <Crown className="w-2 h-2 text-amber-500 ml-1" />}
+          </button>
+        </div>
       </div>
 
       {/* 可供捕获的战报区域 */}
